@@ -1,4 +1,10 @@
-/*primer de commit luis en js*/ 
+/*primer de commit luis en js*/
+player = document.getElementById("player");
+const cactus = document.getElementById("cactus");
+const background = document.getElementById("background");
+const buttonPlayStop = document.getElementById("buttonPlayStop");
+let scoreintervalId
+let score= 0;  
 const player = document.getElementById("player");
 
 document.addEventListener("click",function () {
@@ -70,3 +76,12 @@ buttonPlayStop.addEventListener('click', () => {
     }
     buttonPlayStop.classList.toggle("play");
 })
+//---- score ---------------------------------------------------------------------------------------- 
+
+scoreintervalId = setInterval(()=>
+{
+    score++
+    document.getElementById("score").innerText = score
+
+},1000)
+
