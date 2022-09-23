@@ -36,3 +36,36 @@ body{
     animation: animatedBackground 25s linear infinite;
 }
 
+#cactus
+{
+   position: absolute;
+   width: 55px;
+   height: 80px;
+   bottom: 185px;
+   animation: cactusMovement  2s linear infinite ;
+}
+#cactus img 
+{
+   max-width: 100%;
+   max-height: 100%;
+
+}
+@keyframes cactusMovement 
+{
+    0%
+    {
+       right:0%;
+    }
+    100%
+    {
+       right: 100%;
+    }
+   
+}
+.scoreContainer
+ {
+    font-size: 50px;
+    text-align-last: center;
+    margin-top: 20px;
+ }
+
